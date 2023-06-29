@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body, html{
+    background: white;
+}
+
+.container-all{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+
+.container-all:target{
+    background: rgba(0,0,0,0.8);
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-all:target .popup{
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible;
+}
+
+.popup{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    display:flex;
+    background: white;
+    visibility: hidden;
+    position: relative;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
+}
+
+.icono{
+  position: absolute;
+  top: 58%;
+  right: 48%;
+}
+
+.icono2{
+  position: absolute;
+  top: 30%;
+  right: 39%;
+}
+
+.icono3{
+  position: absolute;
+  top: 30%;
+  right: 58%;
+}
+
+.titulo{
+  position: absolute;
+  bottom: 25%;
+  left: 45%;
+}
+
+.titulo2{
+  position: absolute;
+  top: 25%;
+  right: 36%;
+}
+
+.titulo3{
+  position: absolute;
+  top: 21%;
+  left: 36%;
+}
+
+@media (max-width: 375px) {
+  .titulo {
+    position: absolute;
+    bottom: 10%;
+    left: 95%;
+  }
+
+  .titulo2{
+    position: absolute;
+    top: 30%;
+    right: -72%;
+  }
+
+  .titulo3{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+  }
+
+  .icono{
+    position: absolute;
+    top: 67%;
+    left: 95%;
+  }
+  
+  .icono2{
+    position: absolute;
+    top: 37%;
+    right: -60%;
+  }
+  
+  .icono3{
+    position: absolute;
+    top: 37%;
+    left: 60%;
+  }
+
+  .popup{
+    width: 500%;
+    max-width: 400px;
+    height: 500px;
+    display:flex;
+    background: white;
+    visibility: hidden;
+    position: relative;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
+}
+}
+
+@media (min-width: 376px) and (max-width: 767px) {
+  .titulo {
+    position: absolute;
+    bottom: 27%;
+    left: 95%;
+  }
+
+  .titulo2{
+    position: absolute;
+    top: 30%;
+    right: -72%;
+  }
+
+  .titulo3{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+  }
+
+  .icono{
+    position: absolute;
+    top: 55%;
+    left: 95%;
+  }
+  
+  .icono2{
+    position: absolute;
+    top: 37%;
+    right: -60%;
+  }
+  
+  .icono3{
+    position: absolute;
+    top: 37%;
+    left: 60%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  .titulo {
+    position: absolute;
+    bottom: 36%;
+    left: 62%;
+  }
+
+  .titulo2{
+    position: absolute;
+    top: 23%;
+    right: 1%;
+  }
+
+  .titulo3{
+    position: absolute;
+    top: 20%;
+    left: 42%;
+  }
+
+  .icono{
+    position: absolute;
+    top: 50%;
+    left: 62%;
+  }
+  
+  .icono2{
+    position: absolute;
+    top: 27%;
+    right: 6%;
+  }
+  
+  .icono3{
+    position: absolute;
+    top: 27%;
+    left: 43%;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1023px) {
+  .titulo {
+    position: absolute;
+    bottom: 43%;
+    left: 60%;
+  }
+
+  .titulo2{
+    position: absolute;
+    top: 22%;
+    right: 5%;
+  }
+
+  .titulo3{
+    position: absolute;
+    top: 19%;
+    left: 43%;
+  }
+
+  .icono{
+    position: absolute;
+    top: 45%;
+    left: 61%;
+  }
+  
+  .icono2{
+    position: absolute;
+    top: 25%;
+    right: 10%;
+  }
+  
+  .icono3{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .titulo {
+    position: absolute;
+    top: 92%;
+    left: 54%;
+  }
+
+  .titulo2{
+    position: absolute;
+    top: 30%;
+    right: 18%;
+  }
+
+  .titulo3{
+    position: absolute;
+    top: 23%;
+    left: 40%;
+  }
+
+  .icono{
+    position: absolute;
+    top: 75%;
+    left: 55%;
+  }
+  
+  .icono2{
+    position: absolute;
+    top: 35%;
+    right: 22%;
+  }
+  
+  .icono3{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+  }
+}
+
+@media (min-width: 1280px)  and (max-width: 1300px){
+  .titulo {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+  }
+
+  .titulo2{
+    position: absolute;
+    top: 28%;
+    right: 28%;
+  }
+
+  .titulo3{
+    position: absolute;
+    top: 24%;
+    left: 37%;
+  }
+
+  .icono{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+  }
+  
+  .icono2{
+    position: absolute;
+    top: 33%;
+    right: 31%;
+  }
+  
+  .icono3{
+    position: absolute;
+    top: 33%;
+    left: 39%;
+  }
+}
+
+.img{
+    width: 40%;
+    background-image: url(../img/people.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2{
+    width: 40%;
+    background-image: url(../img/trash.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img3{
+    width: 40%;
+    background-image: url(../img/planet.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-text{
+    width: 60%;
+    padding: 50px;
+    overflow-y: auto;
+}
+
+.container-text h1{
+    font-size: 30px;
+}
+
+.container-text p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn-close-popup{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .popup{
+        flex-direction: column;
+        height: 100%;
+        max-height: 800px;
+    }
+
+    .img, .img2, .img3{
+        width: 100%;
+        height: 40%;
+    }
+
+    .container-text{
+        width: 100%;
+        height: 60%;
+        padding: 80px;
+    }
+
+    .container-text h1 {
+        font-size: 20px;
+    }
+
+    .container-text p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container-text{
+        padding: 20px;
+    }
+
+    .container-text h1 {
+        font-size: 20px;
+    }
+
+    .container-text p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+.sliceWrapper {
+  position: absolute;
+  border: 5px solid green;
+  padding: 0;
+  width: 600px;
+  height: 600px;
+  left: 30%;
+  top: 10%;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+}
+
+.slice {
+  position: absolute;
+  left: -100%;
+  width: 250%;
+  height: 250%;
+}
+
+.li {
+  overflow: hidden;
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 100%;
+}
+
+.li:first-child {
+  transform: rotate(0deg) skewY(220deg);
+}
+
+.li:nth-child(2) {
+  transform: rotate(120deg) skewY(220deg);
+}
+
+.li:nth-child(3) {
+  transform: rotate(240deg) skewY(220deg);
+}
+
+li:first-child .slice {
+  background: red;
+}
+li:first-child .slice:hover{
+  background: tomato;
+}
+
+li:nth-child(2) .slice {
+  background: rgb(160, 150, 7);
+}
+li:nth-child(2)  .slice:hover{
+  background: rgb(167, 161, 82);
+}
+
+li:nth-child(3) .slice {
+  background: aqua;
+}
+li:nth-child(3) .slice:hover{
+  background: skyblue;
+}
